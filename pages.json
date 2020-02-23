@@ -1,0 +1,162 @@
+{
+	"pages": [ 
+		{
+			"path": "pages/index/index",
+			"style": {
+				"backgroundColor":"#EEEEEE",
+				"app-plus":{
+					"scrollIndicator":"none",//隐藏滚动条
+					//配置导航栏
+					"titleNView":{
+						"titleText":"故事库",
+						"titleSize":"20px",
+						"buttons":[
+							//左边
+							{
+								"float":"left",
+								"fontSize":"14px",
+								"type":"none",
+								"text":"登陆后享更多权限",
+								"width":"120px"
+							},
+							//右边
+							{
+								"float":"right",
+								"fontSrc":"./static/icon.tff",
+								"text":"\ue636"//需要拷贝tff文件，并填写fontsrc
+							} 
+						]
+					}
+				}
+			}
+		},
+        {
+            "path" : "pages/home/home",
+            "style" : {
+        		"navigationBarTitleText":"我的",
+				"backgroundColor":"#EEEEEE",
+        		"app-plus":{
+        			"scrollIndicator":"none",//隐藏滚动条
+        			//配置导航栏
+        			"titleNView":{
+        				"buttons":[
+        					//左边
+        					{
+        						"float":"left",
+        						"fontSize":"14px",
+        						"type":"none",
+								"fontSrc":"./static/icon.ttf",
+        						"text":"\ue60a"
+        					}, 
+        					//右边
+        					{
+        						"float":"right",
+								"fontSize":"14px",
+								"type":"none",
+        						"fontSrc":"./static/icon.tff",
+        						"text":"\ue600"
+        					},
+							{
+								"float":"right",
+								"fontSize":"14px",
+								"type":"none",
+								"fontSrc":"./static/icon.tff",
+								"text":"\ue62a"
+							}
+        				]
+        			}
+        		}
+        	}
+        },
+		{
+		    "path" : "pages/myVoice/myVoice",
+		    "style" : {
+				"navigationBarTitleText":"我的声音",
+				"app-plus":{
+					//配置导航栏
+					"titleNView":{
+						"buttons":[
+							//左边
+							{
+								"float":"left",
+								"type":"back"
+							}, 
+							//右边
+							{
+								"float":"right",
+								"fontSize":"14px",
+								"type":"none",
+								"text":"管理"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+		    "path" : "pages/tellStory/tellStory",
+		    "style" : {
+				"navigationBarTitleText":"讲故事"
+			}
+		},
+		{
+            "path" : "pages/myTransform/myTransform",
+            "style" : {
+				"navigationBarTitleText":"我的转换"
+			}
+        },
+		{
+		    "path" : "pages/register/register",
+		    "style" : {
+				"navigationBarTitleText":"音伴"
+			}
+		},
+		{
+		    "path" : "pages/login/login",
+		    "style" : {
+				"navigationBarTitleText":"音伴"
+			}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor":"#FFC107",
+		"backgroundColor":"#EEEEEE"
+	},
+	"tabBar": {
+		"color":"#8A8A8A",
+		"selectedColor":"#FF8920",
+		"backgroundColor":"#FEFEFF",
+		"borderStyle":"#797979",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"text":"首页",
+				"iconPath":"static/images/index.png",
+				"selectedIconPath":"static/images/selectedIndex.png"
+			},
+			{
+				"pagePath":"pages/tellStory/tellStory",
+				"text":"播放",
+				"iconPath":"static/images/play.png",
+				"selectedIconPath":"static/images/selectedPlay.png"
+			},
+			{
+				"pagePath":"pages/home/home",
+				"text":"我的",
+				"iconPath":"static/images/home.png",
+				"selectedIconPath":"static/images/selectedHome.png"
+			}
+		] 
+	}
+		// "condition" : { //模式配置，仅开发期间生效
+		// 	"current": 5, //当前激活的模式(list 的索引项)
+		// 	"list": [
+		// 		{
+		// 			"name": "", //模式名称
+		// 			"path": "pages/register/register", //启动页面，必选
+		// 			"query": "" //启动参数，在页面的onLoad函数里面得到
+		// 		}
+		// 	]
+		// }
+}
