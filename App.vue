@@ -23,6 +23,4 @@
 	@import './common/uni.css';
 	/* 引入自定义css库 */
 	@import './common/icon.css';
-	/* 引入动画库 */
-	@import './common/animate.css';
 </style>
