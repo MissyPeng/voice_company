@@ -153,8 +153,8 @@
 				},1000);
 			},
 			goIndex(){
-				uni.navigateTo({
-					url:"../index/index",
+				uni.switchTab({
+				         url: "../index/index"
 				});
 			},
 			goRegister(){
